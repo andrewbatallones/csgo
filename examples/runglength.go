@@ -7,6 +7,16 @@ import (
 	"strings"
 )
 
+func TestRunlength() {
+	fmt.Printf("%s\n", Runlength("aaaabbccca"))
+	fmt.Printf("%s\n", Runlength("foobar"))
+	fmt.Printf("%s\n", Runlength("aaaaaa"))
+	fmt.Printf("%s\n", Runlength(""))
+
+	output, _ := DecodeRun("1f2o1b1a1r")
+	fmt.Printf("%s\n", output)
+}
+
 // This will compress a string.
 // Example: aaaabbccca => 4a2b3c1a
 func Runlength(input string) string {
@@ -43,7 +53,7 @@ func DecodeRun(input string) (string, error) {
 	// First check if input is blank
 	if len(input) == 0 {
 		return "", nil
-	// Check if it is not divisable by 2
+		// Check if it is not divisable by 2
 	} else if len(input)%2 != 0 {
 		err := errors.New("unable to decode compression string, corrupted input.")
 		return "", err
