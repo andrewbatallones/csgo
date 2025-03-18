@@ -1,10 +1,17 @@
 package main
 
 import (
-	"github.com/andrewbatallones/csgo/leetcode"
+	"fmt"
+
+	"github.com/andrewbatallones/csgo/examples"
 )
 
 func main() {
-	leetcode.RotateArray([]int{1, 2, 3, 4, 5, 6, 7}, 3)
-	leetcode.RotateArray([]int{-1, -100, 3, 99}, 2)
+	fmt.Printf("%s\n", examples.Runlength("aaaabbccca"))
+	fmt.Printf("%s\n", examples.Runlength("foobar"))
+	fmt.Printf("%s\n", examples.Runlength("aaaaaa"))
+	fmt.Printf("%s\n", examples.Runlength(""))
+
+	output, _ := examples.DecodeRun("1f2o1b1a1r")
+	fmt.Printf("%s\n", output)
 }
