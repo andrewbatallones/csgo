@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/andrewbatallones/csgo/algorithms"
-)
+import "github.com/andrewbatallones/csgo/leetcode"
 
 func main() {
-	algorithms.TestPaintFill()
+	leetcode.TestInttoRoman()
 }
