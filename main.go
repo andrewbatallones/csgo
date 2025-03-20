@@ -1,7 +1,9 @@
 package main
 
-import "github.com/andrewbatallones/csgo/leetcode"
+import (
+	"github.com/andrewbatallones/csgo/algorithms"
+)
 
 func main() {
-	leetcode.TestRansomNote()
+	algorithms.SlidingWindow()
 }
