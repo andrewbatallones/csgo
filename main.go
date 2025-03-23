@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/andrewbatallones/csgo/algorithms"
+	"github.com/andrewbatallones/csgo/datatypes"
 )
 
 func main() {
-	algorithms.SlidingWindow()
+	datatypes.TestSLinkedList()
 }
