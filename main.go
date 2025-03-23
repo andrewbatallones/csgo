@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/andrewbatallones/csgo/datatypes"
+	"github.com/andrewbatallones/csgo/leetcode"
 )
 
 func main() {
-	datatypes.TestSLinkedList()
+	leetcode.TestAddTwoNumbers()
 }
