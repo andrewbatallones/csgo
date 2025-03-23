@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	leetcode.TestAddTwoNumbers()
+	leetcode.TestFib()
 }
