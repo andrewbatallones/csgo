@@ -25,24 +25,24 @@ func Constructor() RandomizedSet {
 	return RandomizedSet{set: make(map[int]bool)}
 }
 
-func (this *RandomizedSet) Insert(val int) bool {
-	initVal := this.set[val]
-	this.set[val] = true
+func (t *RandomizedSet) Insert(val int) bool {
+	initVal := t.set[val]
+	t.set[val] = true
 
 	return !initVal
 }
 
-func (this *RandomizedSet) Remove(val int) bool {
-	initVal := this.set[val]
-	delete(this.set, val)
+func (t *RandomizedSet) Remove(val int) bool {
+	initVal := t.set[val]
+	delete(t.set, val)
 
 	return initVal
 }
 
-func (this *RandomizedSet) GetRandom() int {
+func (t *RandomizedSet) GetRandom() int {
 	// slices.Collect is the same as the collect fn in Rust
 	// map.Keys returns an iter
-	keys := slices.Collect(maps.Keys(this.set))
+	keys := slices.Collect(maps.Keys(t.set))
 
 	return keys[rand.Intn(len(keys))]
 }
