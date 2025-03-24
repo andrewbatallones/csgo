@@ -16,7 +16,7 @@ func LongestPalindrome(s string) string {
 		mem[i] = make([]bool, len(s))
 	}
 
-	for idx, _ := range s {
+	for idx := range s {
 		mem[idx][idx] = true
 
 		for j := range idx {
