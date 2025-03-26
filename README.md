@@ -10,6 +10,10 @@ I've also put my leetcode attempts here. A lot of them will probably be messy as
 
 Here is where I'll put other coding challenges that I didn't find on leetcode.
 
+## Golang
+
+This package will be more about Golang specific things.
+
 ## Other Resources
 
 - [100 Go Mistakes and How to Avoid Them](https://100go.co/)
