@@ -1,12 +1,9 @@
 package main
 
-import (
-	"github.com/andrewbatallones/csgo/leetcode"
-)
+import "github.com/andrewbatallones/csgo/datatypes"
 
 func main() {
-	tn1 := leetcode.NewTree([]int{1, 2, 3})
-	tn2 := leetcode.NewTree([]int{1, 2, 3})
+	mHeap := datatypes.NewMinHeap([]int{5, 4, 3, 2, 1})
 
-	leetcode.IsSameTree(tn1, tn2)
+	mHeap.Print()
 }
