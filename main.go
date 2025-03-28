@@ -1,9 +1,9 @@
 package main
 
-import "github.com/andrewbatallones/csgo/datatypes"
+import (
+	"github.com/andrewbatallones/csgo/leetcode"
+)
 
 func main() {
-	mHeap := datatypes.NewMinHeap([]int{5, 4, 3, 2, 1})
-
-	mHeap.Print()
+	leetcode.ProductExceptSelf([]int{1, 2, 3, 4})
 }
