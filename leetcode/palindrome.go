@@ -1,5 +1,10 @@
 package leetcode
 
+import (
+	"strings"
+	"unicode"
+)
+
 // 5. Longest Palindromic Substring
 // Return the longest palindrome substring within the string
 func LongestPalindrome(s string) string {
@@ -32,4 +37,36 @@ func LongestPalindrome(s string) string {
 	}
 
 	return maxStr
+}
+
+// 125. Valid Palindrome
+// Check if lowercase string is a palindrome
+func IsPalindrome(s string) bool {
+	// downcase the string first
+	// have 2 pointers (beginning, end)
+	// iterate through each pointer
+	// 		skip to next pointer if it is not a alphanumeric character
+	// 		return `false` if characters are not equal
+	s = strings.ToLower(s)
+	left := 0
+	right := len(s) - 1
+
+	for left <= right {
+		if !isAlphanumeric(rune(s[left])) {
+			left++
+		} else if !isAlphanumeric(rune(s[right])) {
+			right--
+		} else if s[left] != s[right] {
+			return false
+		} else {
+			left++
+			right--
+		}
+	}
+
+	return true
+}
+
+func isAlphanumeric(r rune) bool {
+	return unicode.IsLetter(r) || unicode.IsDigit(r)
 }
