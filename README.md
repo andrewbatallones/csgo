@@ -17,3 +17,4 @@ This package will be more about Golang specific things.
 ## Other Resources
 
 - [100 Go Mistakes and How to Avoid Them](https://100go.co/)
+- [Delve](https://github.com/go-delve/delve): A powerful debugger for Go.
